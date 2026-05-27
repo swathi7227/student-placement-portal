@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fce7f3, #dcfce7);
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #1e3a8a;
+  font-size: 42px;
+}
+
+p {
+  color: #475569;
+  font-size: 18px;
+}
+
+.form-box {
+  background: white;
+  width: 420px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.form-box h2 {
+  color: #2563eb;
+}
+
+input {
+  width: 90%;
+  padding: 13px;
+  margin: 10px;
+  border: 2px solid #bfdbfe;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 13px 35px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+.job-card {
+  background: #f8fafc;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 15px;
+  border-left: 6px solid #2563eb;
+  text-align: left;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.job-card h3 {
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.job-card p {
+  font-size: 15px;
+  color: #334155;
+}
+
+h3 {
+  color: #15803d;
+  margin-top: 20px;
+}
