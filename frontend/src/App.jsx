@@ -15,6 +15,7 @@ function App() {
   const [jobs, setJobs] = useState([]);
   const [studentId, setStudentId] = useState("");
   const [applications, setApplications] = useState([]);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -99,7 +100,19 @@ function App() {
 
         <input name="name" type="text" placeholder="Full Name" onChange={handleChange} />
         <input name="email" type="email" placeholder="Email" onChange={handleChange} />
-        <input name="password" type="password" placeholder="Password" onChange={handleChange} />
+
+        <div className="password-box">
+          <input
+            name="password"
+            type={showPassword ? "text" : "password"}
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          <span onClick={() => setShowPassword(!showPassword)}>
+            {showPassword ? "🙈" : "👁️"}
+          </span>
+        </div>
+
         <input name="branch" type="text" placeholder="Branch" onChange={handleChange} />
         <input name="cgpa" type="number" placeholder="CGPA" onChange={handleChange} />
         <input name="skills" type="text" placeholder="Skills" onChange={handleChange} />
